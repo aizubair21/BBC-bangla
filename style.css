@@ -1,0 +1,193 @@
+body h2{
+    font-family: 'sonar-bangla';
+}
+.container{
+    width: 992;
+    border: 1px solid black;
+}
+#nav .nav-body{
+    background-color: brown;
+    height: 35px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#nav .nav-body a{
+    display: flex;
+    color:white;
+    padding: 10px;
+    font-size: 11px;
+    height: 12px;
+}
+#nav .nav-body a:hover{
+    border-bottom: 3px solid white;
+}
+#nav .nav-body ul{
+    display: flex;
+
+}
+#nav .nav-body .top h3{
+    margin-right: 3px;
+    color: black;
+    background-color: white;
+    padding: 1px;
+    letter-spacing: 5px;
+    align-self: center;
+    text-align: center;
+}
+
+/* #nav .nav-body .top span{
+    
+} */
+.common-heading{
+    width: 100%;
+}
+.common-heading h2{
+    /* border: 1px solid black; */
+    padding:10px 15px;
+    width: 150px;
+    font-weight: 600;
+    position:relative;
+   
+}
+.common-heading h2::after{
+    position:absolute;
+    content:"______________________________________________________________";
+    bottom: 10px; 
+    left: 170px;
+
+
+    
+}
+
+#top-news .top{
+    display: flex;
+    padding: 10px;
+}#top-news .top:hover h2{
+    text-decoration: underline;
+}
+#top-news .top img{
+    width: 500px;
+
+}
+#top-news .top h2{
+    padding:2px 20px 20px 20px;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+}
+#top-news .top p{
+    padding:2px 20px 20px 20px;
+    line-height: 30px;;
+}
+#top-news .top span{
+    padding:2px 20px 20px 20px;
+}
+#top-news-two{
+
+}
+#top-news-two a{
+   margin: 10px auto; 
+}
+#top-news-two a:hover{
+    text-decoration: underline;
+}
+#top-news-two img{
+    width: 230px;
+}
+#top-news-two h2, span{
+    margin:5px auto;
+    width: 230px;
+    color: black;
+    font-size: 20px;
+    line-height: 25px;
+  
+}
+#top-news-two a span{
+    font-size:15px;
+}
+#top-news-two h2{
+    font-family: 'sonar-bangla';
+    font-weight: 00;
+    letter-spacing: 1px;;
+}
+.white-spach{
+    height: 400px;
+    background-color: rgba(202, 202, 202, 0.171);
+    margin: 20px 0;;
+}
+#corona-virus{
+    margin:15px 0;
+}
+#corona-virus a{
+    margin: 10px auto;
+    color: black;
+}
+#corona-virus a:hover h2{
+    text-decoration: underline;
+}
+#corona-virus img{
+    width: 230px;
+    height: 150px;
+}
+#corona-virus h2{
+    margin: 5px 0;
+    width: 230px;
+    font-size: 20px;
+}
+#corona-virus span{
+    font-size:15px;
+}
+#audio{
+    margin:15px 0;
+}
+#audio a{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+#audio video{
+    height: 200px;
+    border:1px dotted;
+    margin-right: 15px;
+}
+#audio a h2{
+    color: black;
+    font-size: 40px;
+    text-decoration: underline;
+    letter-spacing: -2px;
+    font-weight: 600;
+    
+}
+#audio a p{
+    line-height: 30px;
+}
+
+#audio .row2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+#audio .row2 a{
+    display: block;
+    border: 1px solid;
+
+}
+
+#audio .row2 a h2{
+    font-family: 'sonar-bangla';
+    font-size:20px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+#audio .row2 p{
+    text-align: left;
+    display: none;;
+}
+#audio span{
+    font-size: 12px;
+}
