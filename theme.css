@@ -28,7 +28,7 @@
 }
 @font-face{
     font-family : 'sonar-bangla';
-    src: url(font/Shonar.ttf)
+    src: url('font/Shonar.ttf')
 }
 
 p {

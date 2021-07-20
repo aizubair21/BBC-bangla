@@ -3,7 +3,7 @@ body h2{
 }
 .container{
     width: 992;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #nav .nav-body{
     background-color: brown;
@@ -81,14 +81,14 @@ body h2{
 }
 #top-news .top p{
     padding:2px 20px 20px 20px;
-    line-height: 30px;;
+    line-height: 30px;
 }
 #top-news .top span{
     padding:2px 20px 20px 20px;
 }
-#top-news-two{
+/* #top-news-two{
 
-}
+} */
 #top-news-two a{
    margin: 10px auto; 
 }
@@ -143,6 +143,7 @@ body h2{
 }
 #audio{
     margin:15px 0;
+    
 }
 #audio a{
     display: flex;
@@ -189,5 +190,43 @@ body h2{
     display: none;;
 }
 #audio span{
-    font-size: 12px;
+    font-size: 15px;
 }
+
+
+
+
+#report, #letter{
+    margin: 15px;
+    font-family: 'sonar-bangla';
+}
+
+#letter a h2{
+    font-size: 35px;
+    font-family: 'sonar-bangla';
+    color: black;
+    font-weight: 600;
+    text-align: left;
+
+}
+#letter a p{
+    font-size: 20px;
+    font-family: 'sonar-bangla';
+}
+
+
+
+#report{}
+#report a h2{
+    font-size:35px;
+    font-family: 'sonar-bangla';
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+    ;
+}
+#report a p{
+    font-size: 20px;
+    font-family:'sonar-bangla';
+}
+#report a span{}
