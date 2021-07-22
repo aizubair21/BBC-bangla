@@ -172,6 +172,7 @@ body h2, p, span{
 #audio a h2{
     color: black;
     font-size: 40px;
+    font-family: 'sonar-bangla';
     text-decoration: underline;
     letter-spacing: -2px;
     font-weight: 600;
@@ -179,6 +180,7 @@ body h2, p, span{
 }
 #audio a p{
    font-size: 20px;
+   margin: 10px 0;
 
 }
 
@@ -234,6 +236,7 @@ body h2, p, span{
 #letter a p{
     font-size: 20px;
     font-family: 'sonar-bangla';
+    margin: 10px 0;
 }
 #letter span{
     font-size: 15px;
@@ -263,6 +266,7 @@ body h2, p, span{
 #report a p{
     font-size: 20px;
     font-family:'sonar-bangla';
+    margin: 10px 0;
 }
 #report a span{
     font-size: 15px;
@@ -288,12 +292,16 @@ body h2, p, span{
 #history a p{
     font-size: 20px;
     font-family: 'sonar-bangla';
+    margin:10px 0;
 }
 #history a span{
     font-size: 15px;
     color:black;
 }
 
+#other{
+    margin-bottom: 35px;
+}
 #other .row{
     margin: 10px 0;
 }
@@ -310,7 +318,85 @@ body h2, p, span{
     font-size: 20px;
     margin:3px 0;
     width: 100%;
+    margin: 5px 0;
+    
 }
 #other a span{
     font-size: 15px;;
+}
+#other a:hover {
+    text-decoration: underline;
+}
+
+
+.overlay img{
+    position: relative;
+    
+}
+.overlay symbol{
+    position: absolute;
+    font-size: 35px;
+    border:3px solid red;
+}
+
+
+
+
+#photo{
+    margin-bottom: 35px;
+}
+#photo a{
+    margin-top: 15px;
+    display: flex;
+    color: black;
+}
+#photo a div{
+    margin-left: 15px;
+}
+#photo a h2{
+    font-size:30px;
+    font-family: 'sonar-bangla';
+
+}
+#photo a p{
+    font-size: 20px;
+    margin:10px 0;
+}
+#photo a span{
+    font-size: 15px;
+}
+#photo a:hover h2{
+    text-decoration: underline;
+}
+
+
+
+#archive{
+    /* margin-top: 15px; */
+    margin-bottom: 15px;
+}
+#archive a{
+    display: flex;
+    color:black;
+    margin-top: 15px;
+}
+#archive a h2{
+    font-family: 'sonar-bangla';
+    font-size: 35px;
+}
+#archive a p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+#archive a span{
+    font-size: 15px;
+}
+
+
+#archive .archive_two ‍a {
+    display: block;
+}
+#archive .archive_two a img{
+    width: 100%;
+    
 }
