@@ -12,8 +12,6 @@ body h2, p, span{
 
 }
 #nav .nav-body{
-    
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -83,6 +81,8 @@ body h2, p, span{
 }
 
 
+
+
 /* #nav .nav-body .top span{
     
 } */
@@ -112,12 +112,12 @@ body h2, p, span{
     text-decoration: underline;
 }
 #top-news .top img{
-    width: 500px;
+    margin-left: -25px;
 
 }
 #top-news .top h2{
     padding:2px 20px 20px 20px;
-    color: black;
+    color: rgb(0, 0, 0);
     letter-spacing: 2px;
     font-family: 'sonar-bangla';
     font-size: 35px;
@@ -126,7 +126,8 @@ body h2, p, span{
 #top-news .top p{
     padding:2px 20px 20px 20px;
     font-size: 20px;
-    letter-spacing: 1px;;
+    letter-spacing: 1px;
+    color: black;
 }
 #top-news .top span{
     font-size: 15px;
@@ -136,8 +137,10 @@ body h2, p, span{
 /* #top-news-two{
 
 } */
+
 #top-news-two a{
    margin: 10px auto; 
+   box-sizing: border-box;
 }
 #top-news-two a:hover{
     text-decoration: underline;
@@ -162,6 +165,10 @@ body h2, p, span{
     font-weight: 00;
     letter-spacing: 1px;;
 }
+#top-news-two a:hover h2{
+    text-decoration-color: black;
+    text-decoration: underline;
+}
 .white-spach{
     height: 400px;
     background-color: rgba(202, 202, 202, 0.171);
@@ -176,6 +183,7 @@ body h2, p, span{
 }
 #corona-virus a:hover h2{
     text-decoration: underline;
+    text-decoration-color: black;
 }
 #corona-virus img{
     width: 230px;
@@ -215,6 +223,7 @@ body h2, p, span{
 #audio a p{
    font-size: 20px;
    margin: 10px 0;
+   color: black;
 
 }
 
@@ -258,6 +267,7 @@ body h2, p, span{
 }
 #letter a:hover h2{
     text-decoration: underline;
+    text-decoration-color: black;
 }
 #letter a h2{
     font-size: 35px;
@@ -271,6 +281,7 @@ body h2, p, span{
     font-size: 20px;
     font-family: 'sonar-bangla';
     margin: 10px 0;
+    color: black;
 }
 #letter span{
     font-size: 15px;
@@ -288,6 +299,7 @@ body h2, p, span{
 
 #report a:hover h2{
     text-decoration: underline;
+    text-decoration-color: black;
 }
 #report a h2{
     font-size:35px;
@@ -301,6 +313,7 @@ body h2, p, span{
     font-size: 20px;
     font-family:'sonar-bangla';
     margin: 10px 0;
+    color: black;
 }
 #report a span{
     font-size: 15px;
@@ -321,17 +334,23 @@ body h2, p, span{
     font-weight: 600;
     color: black;
     margin-bottom: 10px;
+}
+#history a:hover h2{
     text-decoration: underline;
 }
 #history a p{
     font-size: 20px;
     font-family: 'sonar-bangla';
     margin:10px 0;
+    color: black;
 }
 #history a span{
     font-size: 15px;
     color:black;
 }
+
+
+
 
 #other{
     margin-bottom: 35px;

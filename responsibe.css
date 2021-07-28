@@ -1,0 +1,38 @@
+@media only screen and (max-width: 570px){
+
+    #top-news .top img{
+        width:100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #top-news .row{
+        margin:0;
+        padding: 0;
+    }
+
+    #top-news .top{
+        display: block;
+        box-sizing: border-box;
+        border: 1px solid black;;
+        margin: 0;
+    }
+    #top-news .top p{
+        padding: 0;
+       
+    }
+    #top-news .top h2{
+        font-size: 25px;
+        padding: 0;
+        width: 100%;
+    }
+
+    #top-news-two a{
+        display:flex;
+        justify-content: left;
+    }
+    #top-news-two a img{
+        width:50px;
+    }
+}

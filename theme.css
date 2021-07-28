@@ -1,11 +1,3 @@
-:root {
-    --pg: #555555;
-    --brand1: #0872b9;
-    --brand2: #5bc5f4;
-    --white: #ffffff;
-    --black: #353535;
-    --border: 1px solid red;
-}
 
 @font-face {
     font-family: 'opens-sans-regular';
@@ -38,3 +30,4 @@ p {
     font-weight: 400;
     font-family: "opens-sans-regular";
 }
+
