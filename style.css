@@ -122,6 +122,8 @@ body h2, p, span{
     font-family: 'sonar-bangla';
     font-size: 35px;
     font-weight: 600;
+    width: 100%;
+    /* border: 1px solid black; */
 }
 #top-news .top p{
     padding:2px 20px 20px 20px;
@@ -146,7 +148,7 @@ body h2, p, span{
     text-decoration: underline;
 }
 #top-news-two img{
-    width: 230px;
+    width: 100%;
 }
 #top-news-two h2{
     margin:5px auto;
@@ -186,7 +188,7 @@ body h2, p, span{
     text-decoration-color: black;
 }
 #corona-virus img{
-    width: 230px;
+    width: 100%;
     height: 150px;
 }
 #corona-virus a h2{
