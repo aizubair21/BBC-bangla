@@ -68,5 +68,64 @@
     #audio .row2 a {
         display: flex;
     }
+    #audio .row2 video{
+        width: 0%;
+        height: auto;
+    }
 
+
+
+    #letter a, #report a, #history a{
+        display: block;
+    }
+
+
+
+
+
+    #other .row{
+        display: block;
+    }
+    #other a{
+        display: flex;
+        flex-direction: row;
+    }
+    #other a img{
+        width: 0%;
+    }
+
+
+
+    #photo .row, #archive .row{
+        display: block;
+    }
+    #photo a, #archive a{
+        display: block;
+    }
+
+
+    #top_footer .row{
+        margin: 0;
+    }
+    #top_footer a p{
+        padding: 5px;
+    }
+    #footer .row{
+        margin: 0 5px ;
+        padding: 0;
+        font-size: 15px;
+    }
+    #footer{
+        height: ;
+    }
+    #footer a{
+        font-size: 12px;
+        padding: 5px;
+    }
+    #footer span{
+        font-size: 12px;
+    }
+    #footer .row:nth-child(2) a{
+        padding: 5px 0;
+    }
 }
