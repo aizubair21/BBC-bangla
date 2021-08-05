@@ -1,32 +1,52 @@
-@media only screen and (max-width: 570px){
 
-    #top-news .top img{
+@media only screen and (max-width: 360px){
     
+    .common-heading h2::after{
+        position:absolute;
+        content:"__________";
+        bottom: 10px; 
+        left: 200px;
+      
+    }
+    
+    #top-news {
+        border: 1px solid;
         padding: 0;
         margin: 0;
-        box-sizing: border-box;
     }
-    #top-news .row{
-        margin:0;
-        padding: 0;
+    #top-news .top img{
+        margin: 2px;
+        width: 100%;
+        /* border: 1px solid; */
     }
+
+
 
     #top-news .top{
+        width: 100%;
+        height: auto;
         display: block;
         box-sizing: border-box;
-        /* border: 1px solid black;; */
+        border: 1px solid black;;
         margin: 0;
+        padding: 0;
+        
     }
+
+
     #top-news .top p{
         padding: 0;
         margin: 0;
-        text-align: justify;
+        text-align: left;
+        font-size: 15px;
+        line-height: normal;
        
     }
     #top-news .top h2{
         font-size: 25px;
         padding: 0;
         width: 100%;
+        word-spacing: normal;
     }
 
     #top-news-two .row{
@@ -60,18 +80,19 @@
         display: block;
     }
 
-
-
     #audio .row2{
         display: block;
     }
     #audio .row2 a {
         display: flex;
+        width: 95%;
+        border: 1px solid black;
     }
     #audio .row2 video{
         width: 0%;
         height: auto;
     }
+
 
 
 

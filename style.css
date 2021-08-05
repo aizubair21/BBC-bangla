@@ -2,7 +2,7 @@ body h2, p, span{
     font-family: 'sonar-bangla';
 }
 .container{
-    width: 992px;
+    width: 95%;
     /* border: 1px solid black; */
 }
 
@@ -113,6 +113,7 @@ body h2, p, span{
 }
 #top-news .top img{
     margin-left: -25px;
+    
 
 }
 #top-news .top h2{
