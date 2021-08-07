@@ -1,0 +1,230 @@
+
+@media only screen and (max-width: 365px){
+    .container {
+        width: 90%;
+        margin: 0;
+       
+    }
+    .common-heading h2::after{
+        position:absolute;
+        content:"_________";
+        bottom: 10px; 
+        left: 180px;
+      
+    }
+
+    #nav {
+
+    }
+    #nav .nav-body .top, .bottom{
+        margin-left: 0;
+    }   
+
+    #top-news {
+        /* border: 1px solid; */
+        padding: 0;
+        margin: 0;
+    }
+    #top-news .top img{
+        width: 355px;
+        /* border: 1px solid; */
+    }
+
+
+
+    #top-news .top{
+        width: 115%;
+        display: block;
+        box-sizing: border-box;
+        /* border: 1px solid black;; */
+        margin: 0;
+        padding: 0;
+        
+    }
+
+
+    #top-news .top p{
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size: .9rem;
+        line-height: ;
+        width: 83%;
+        /* border: 1px solid; */
+       
+    }
+    #top-news .top h2{
+        font-size: 1.5rem;
+        padding: 0;
+        width: 90%;
+        word-spacing: normal;
+        color: rgba(0,0,0, .8);
+    }
+
+
+
+
+
+
+    #top-news-two .row{
+        display: block;
+        padding: 0;
+        
+    }
+    #top-news-two .row h2{
+        font-size: 1rem;
+        line-height: normal;
+        align-self: flex-start;
+        width: 100%;
+        color: rgba(0,0,0, .8);
+        /* border: 1px solid; */
+    }
+
+    
+    #top-news-two a{
+        width: 98%;
+        display:flex;
+        align-content: flex-start;
+        /* border: 1px solid; */
+        margin: 0;
+    }
+
+
+    #top-news-two img{
+       width: 0%;
+    }
+
+
+
+
+
+    #corona-virus .row{
+        display: block;
+    }
+    #corona-virus a{
+        width: 95%;
+        display: flex;
+        /* border: 1px solid; */
+        margin: 0;
+    }
+    #corona-virus a h2{
+        font-size: 1rem;
+        width: 100%;
+        color:rgba(0,0,0, .8);
+    }
+    #corona-virus img{
+        width: 0%;
+        height: auto;
+    }
+
+
+
+
+    #audio a{
+        width: 95%;
+        border: 1px solid;
+        display: block;
+    }
+    #audio a h2{
+        width: 100%;
+        font-size: 1rem;
+        font-family: 'sonar-bangla';
+        letter-spacing: 1px;
+        color: rgba(0,0,0, .8);
+       
+    }
+    #audio a p {
+        font-size: .9rem;
+        text-align: justify;
+    }
+
+    #audio .row2{
+        display: block;
+    }
+    #audio .row2 a {
+        display: flex;
+        width: 90%;
+        border: 1px solid black;
+    }
+    #audio .row2 a h2 {
+        font-size: 1rem;
+        width: 100%;
+    }
+    #audio .row2 video{
+        width: 0%;
+        height: auto;
+    }
+
+
+
+
+    #letter a, #report a, #history a{
+        display: block;
+        width: 95%;
+    }
+    #letter a h2, #report a h2, #history a h2 {
+        font-size: 1.3rem;
+        color:rgba(0,0,0, .8);
+        font-weight: 400;
+    }
+    #letter a p, #report a p, #history a p {
+        font-size: .9rem;
+        color:rgba(0,0,0, .8);
+        font-weight: 400;
+    }
+
+
+
+
+
+    #other .row{
+        display: block;
+    }
+    #other a{
+        width: 95%;
+        color: rgba(0,0,0, .8);
+        font-size: 1rem;
+        font-weight: 400;
+        /* border : 1px solid; */
+        display: flex;
+        flex-direction: row;
+    }
+    #other a img{
+        width: 0%;
+    }
+
+
+
+    #photo .row, #archive .row{
+        display: block;
+    }
+    #photo a, #archive a{
+        display: block;
+    }
+
+
+    #top_footer .row{
+        margin: 0;
+    }
+    #top_footer a p{
+        padding: 5px;
+    }
+    #footer .row{
+        margin: 0 5px ;
+        padding: 0;
+        font-size: 15px;
+    }
+    #footer{
+        height: ;
+    }
+    #footer a{
+        font-size: 12px;
+        padding: 5px;
+    }
+    #footer span{
+        font-size: 12px;
+    }
+    #footer .row:nth-child(2) a{
+        padding: 5px 0;
+    }
+}
