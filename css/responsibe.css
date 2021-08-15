@@ -248,3 +248,106 @@
         padding: 5px 0;
     }
 }
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) { 
+    /* #top-news .row a{
+        display: block;
+        padding: 0;
+        margin: 0;
+    } */
+    #top-news .row a div h2 {
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+    #top-news .row a p {
+        padding: 0;
+    }
+    #top-news-two .row a {
+     display: flex;
+    }
+    #top-news-two h2{
+        margin: 0;
+        width: auto;
+        font-weight: 600;
+    }
+    
+    #corona-virus .row a {
+        display: flex;
+        
+    }
+    #corona-virus .row a div h2 {
+        font-weight: 600;
+        width: auto;
+    }
+    #corona-virus .row a div {
+        margin-left: 10px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #top-news-two .row a {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    #top-news-two .row a div {
+        margin-left:10px ;
+    }
+
+    #top-news-two h2{
+        margin: 0;
+        width:auto;
+        font-weight: 600;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #top-news .row a {
+        display: flex;
+    }
+    
+    #top-news .row a div {
+        margin-left: 10px;
+    }
+
+    #top-news-two .row a {
+        display: block;
+       
+    }
+
+    #top-news-two h2{
+        margin: 0;
+        width:230px;
+        font-weight: normal;
+        line-height: normal;
+    }
+
+    #top-news-two .row a div {
+        margin-left: 0px ;
+    }
+    #corona-virus .row a {
+        display: block;
+        
+    }
+    #corona-virus .row a div h2 {
+        font-weight: normal;
+        width: 230px;
+    }
+    #corona-virus .row a div {
+        margin-left: 0px;
+    }
+
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
