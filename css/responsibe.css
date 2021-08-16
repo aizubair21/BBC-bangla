@@ -188,7 +188,7 @@
 
 
     #other .row{
-        display: block;
+        display: flex;
     }
     #other a{
         width: 95%;
@@ -308,6 +308,21 @@
     #corona-virus img{
         height: auto;
     }
+
+    #audio a {
+        display: block;
+    }
+
+    #audio a div {
+        width: 100%;
+    }
+
+    #audio .row2 a {
+        display: flex;
+    }
+    #audio .row2 a video {
+        width: 200px;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -328,6 +343,10 @@
         margin: 0;
         width:auto;
         font-weight: 600;
+    }
+
+    #audio .row2 a {
+        display: flex;
     }
 }
 
