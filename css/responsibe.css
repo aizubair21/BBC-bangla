@@ -1,3 +1,13 @@
+.container {
+    width: 100%;
+}
+#corona-virus img{
+    width: 100%;
+    height: auto;
+}
+#top-news-two h2 {
+    margin: 0;
+}
 
 @media only screen and (max-width: 360px){
     .container {
@@ -48,7 +58,6 @@
         padding: 0;
         text-align: left;
         font-size: .9rem;
-        line-height: ;
         width: 83%;
         /* border: 1px solid; */
        
@@ -258,6 +267,11 @@
         padding: 0;
         margin: 0;
     } */
+
+    .container {
+        max-width: 100% !important;
+        margin: 0;
+    }
     #top-news .row a div h2 {
         padding: 0;
         margin: 0;
@@ -268,6 +282,11 @@
     }
     #top-news-two .row a {
      display: flex;
+     margin: 2.5px 0;
+     padding: 0;
+    }
+    #top-news-two .row a div {
+        margin-left: 10px;
     }
     #top-news-two h2{
         margin: 0;
@@ -286,10 +305,16 @@
     #corona-virus .row a div {
         margin-left: 10px;
     }
+    #corona-virus img{
+        height: auto;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
     #top-news-two .row a {
         display: flex;
         margin: 10px 0;
