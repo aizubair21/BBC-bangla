@@ -1,133 +1,141 @@
-.container {
-    width: 100%;
-}
-
-
-
-#top-news .row a{
-    display: block;
-}
-#top-news .row a img {
-    width: 100%;
-    margin: 0;
-}
-#top-news .row a div h2 {
-    font-size: 25px;
-    font-weight: normal;
-    padding: 0;
-    letter-spacing: normal;
+@media (min-width: 360px ) and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    
+    .common-heading h2::after{
+        position:absolute;
+        content:"";
+        bottom: 10px; 
+        left: 185px;
+      
+    }
+    
+    #top-news .row a{
+        display: block;
+    }
+    #top-news .row a img {
+        width: 100%;
+        margin: 0;
+    }
+    #top-news .row a div h2 {
+        font-size: 25px;
+        font-weight: normal;
+        padding: 0;
+        letter-spacing: normal;
+        
+    }
+    #top-news .row a div p {
+        letter-spacing: normal;
+        font-size: 15px;
+        padding: 0;
+        line-height: normal;
+      
+    }
+    
+    #top-news-two h2 {
+        margin: 0;
+        width: 100%;
+        letter-spacing: normal;
+    }
+    
+    #corona-virus img{
+        width: 100%;
+        height: auto;
+    }
+    #corona-virus a h2 {
+        width: 100%;
+    }
+    
+    
+    #audio .row a {
+        display: block;
+    }
+    #audio .row a div {
+        width: 100%;
+    }
+    #audio .row a div h2{
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: normal;
+        text-decoration: none;
+        width: 100%;
+    }
+    #audio .row a div p {
+        font-size: 15px;
+    }
+    
+    #letter a div h2 {
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: normal;
+        text-decoration: none;
+        width: 100%;
+    }
+    #letter a div p {
+        font-size: 15px;
+    }
+    
+    
+    #report a div h2{
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: normal;
+        text-decoration: none;
+        width: 100%;
+    }
+    #report a div p {
+        font-size: 15px;
+    }
+    
+    #history a div h2 {
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: normal;
+        text-decoration: none;
+    }
+    #history a div h2 p {
+        font-size: 15px;
+    }
+    #photo a {
+        display: block;
+    }
+    
+    #photo a div h2 {
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: normal;
+        text-decoration: none;
+    }
+    #photo a div p {
+        font-size: 15px;
+    }
+    #photo a img{
+        width: 100%;
+    }
+    #photo a div {
+        margin: 0;
+    }
+    
+    
+    #archive a div h2 {
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: normal;
+        text-decoration: none;
+    }
+    #archive a div p {
+        font-size: 15px;
+    }
+    #archive a {
+        display: block;
+    }
+    #archive a img {
+        width: 100%;
+    }
+    
     
 }
-#top-news .row a div p {
-    letter-spacing: normal;
-    font-size: 15px;
-    padding: 0;
-    line-height: normal;
-  
-}
-
-#top-news-two h2 {
-    margin: 0;
-    width: 100%;
-    letter-spacing: normal;
-}
-
-#corona-virus img{
-    width: 100%;
-    height: auto;
-}
-#corona-virus a h2 {
-    width: 100%;
-}
-
-
-#audio .row a {
-    display: block;
-}
-#audio .row a div {
-    width: 100%;
-}
-#audio .row a div h2{
-    font-weight: normal;
-    font-size: 25px;
-    letter-spacing: normal;
-    text-decoration: none;
-    width: 100%;
-}
-#audio .row a div p {
-    font-size: 15px;
-}
-
-#letter a div h2 {
-    font-weight: normal;
-    font-size: 25px;
-    letter-spacing: normal;
-    text-decoration: none;
-    width: 100%;
-}
-#letter a div p {
-    font-size: 15px;
-}
-
-
-#report a div h2{
-    font-weight: normal;
-    font-size: 25px;
-    letter-spacing: normal;
-    text-decoration: none;
-    width: 100%;
-}
-#report a div p {
-    font-size: 15px;
-}
-
-#history a div h2 {
-    font-weight: normal;
-    font-size: 25px;
-    letter-spacing: normal;
-    text-decoration: none;
-}
-#history a div h2 p {
-    font-size: 15px;
-}
-#photo a {
-    display: block;
-}
-
-#photo a div h2 {
-    font-weight: normal;
-    font-size: 25px;
-    letter-spacing: normal;
-    text-decoration: none;
-}
-#photo a div p {
-    font-size: 15px;
-}
-#photo a img{
-    width: 100%;
-}
-#photo a div {
-    margin: 0;
-}
-
-
-#archive a div h2 {
-    font-weight: normal;
-    font-size: 25px;
-    letter-spacing: normal;
-    text-decoration: none;
-}
-#archive a div p {
-    font-size: 15px;
-}
-#archive a {
-    display: block;
-}
-#archive a img {
-    width: 100%;
-}
-
-
 
 @media only screen and (max-width: 360px){
     .container {
@@ -387,18 +395,35 @@
         padding: 0;
         margin: 0;
     } */
-
+    .common-heading h2::after{
+        position:absolute;
+        content:"_____________________________";
+        bottom: 10px; 
+        left: 185px;
+      
+    }
     .container {
         max-width: 100% !important;
         margin: 0;
     }
+    #top-news .row a {
+        display: flex;
+        justify-content: space-between;
+    }
+
     #top-news .row a div h2 {
         padding: 0;
         margin: 0;
         width: auto;
+        text-align: left;
+        font-size: 30px;
+        line-height: normal;
     }
     #top-news .row a p {
         padding: 0;
+        font-size: 15px;
+        letter-spacing:0;
+        line-height: normal;
     }
     #top-news-two .row a {
      display: flex;
@@ -443,6 +468,19 @@
     #audio .row2 a video {
         width: 200px;
     }
+
+    #photo a {
+        display: block;
+    }
+    #photo a img{
+        width: 100%;
+    }
+    #archive .row a {
+        display: block;
+    }
+    #archive .row a img{
+        width: 100%;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -450,6 +488,7 @@
     .container {
         width: 100%;
     }
+
     #top-news-two .row a {
         display: flex;
         margin: 10px 0;
@@ -506,6 +545,42 @@
     }
     #corona-virus .row a div {
         margin-left: 0px;
+    }
+    #corona-virus img {
+        height: 150px;
+    }
+
+    #audio .row a {
+        display: flex;
+        justify-content: space-between;
+    }
+    #audio .row2 a {
+        display: block;
+    }
+
+    #letter a {
+        display: flex;
+        justify-content: space-between;
+    }
+    #report a{
+        display: flex;
+        justify-content: space-between;
+    }
+    #history a {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #photo a {
+        display: flex;
+        
+    }
+    #photo a img {
+        width:50%;
+    }
+    #archive .row a {
+        display: flex;
+        justify-content: space-between;
     }
 
  }
