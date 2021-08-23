@@ -14,7 +14,15 @@
     <link rel="stylesheet" href="css/responsibe.css">
 
 </head>
-<body>
+
+
+<div id="loader-body">
+
+
+<div id="loader"></div>
+
+</div>
+<body onload="stopLoader()">
     <div id="nav">
         <div class="row">
             <div class="col-lg-12  col-xm-10">
@@ -589,5 +597,13 @@
             <a href="#"> বাইরের লিংক সম্পর্কে বিবিসির দৃষ্টিভঙ্গি পড়ুন |</a>
         </div>
     </section>
+
+
+    <script>
+    var loader = document.getElementById('loader');
+    function stopLoader() {
+        loader.style.display = "none";
+    }       
+    </script>
 </body>
 </html>
