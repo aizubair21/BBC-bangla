@@ -23,36 +23,10 @@
 
 </div>
 <body onload="stopLoader()">
-    <div id="nav">
-        <div class="row">
-            <div class="col-lg-12  col-xm-10">
-                <div class="nav-body">
-                    <a href="#" class="top ">
-                        <h3>
-                            <span>B</span>
-                            <span>B</span>
-                            <span>C</span>
-                        
-                        </h3>
-                        <span>NEWS | </span>
-                        <span> বাংলা</span>
-
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-xm-10">
-                <div class="nav-body">
-                    <ul class="bottom">
-                        <li class="active"><a href="#" >মুলপাতা</a></li>
-                        <li><a href="#">করোনাভাইরাস</a></li>
-                        <li><a href="#">ভিডিও</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+        require_once('private/connection.php');
+        require('share/navigation.php');
+    ?>
     <section id="top-news">
         <div class="container">
             <div class="row">
