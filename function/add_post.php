@@ -1,20 +1,49 @@
+<pre>
+  <?php
+    print_r($_POST);
+  ?>
+</pre>
+
+
+<!-- <img src="../upload/uploads/<?php echo($_FILES['image']['name'])?> " alt="image not found"> -->
 <?php
+session_start();
+$title = $_POST['title'];
+$description = $_POST['description'];
+$image_caption = $_POST['caption'];
+$image = $_FILES['image']['name'];
+$category = $_POST['category'];
+require_once('../private/connection.php');
 
-echo "<pre>";
- print_r($_FILES);
-echo"</pre>";
+$data = "INSERT INTO posts(title,description,image_caption,image,category) VALUES('$title', '$description', '$image_caption', '$image', $category)";
 
-$target_dir = "upload/";
-//$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-//$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+if (mysqli_query($conn, $data)) {
+  $_SESSION["statis"] = "Post Added !";
+  echo 'post added !';
+  echo "<br>";
+} else {
+  echo mysqli_error($conn);
+  echo "<br>";
+};
 
-// Check if image file is a actual image or fake image
-  $check = getimagesize($_POST["image"]["tmp_name"]);
-  if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
-    $uploadOk = 1;
-  } else {
-    echo "File is not an image.";
-    $uploadOk = 0;
+
+if (($_FILES["image"]["type"] == "image/gif") || ($_FILES["image"]["type"] == "image/jpeg") || ($_FILES["image"]["type"] == "image/png") || ($_FILES["image"]["type"] == "image/pjpeg")) {
+  if ($_FILES["image"]["error"] > 0) {
+    echo "Return code: " . $_FILES["image"]["error"];
+  }else {
+     echo $_FILES["image"]["name"] ."<br>";
+    // echo $_FILES["image"]["size"] ."<br>";
+    // echo $_FILES["image"]["type"] ."<br>"; 
+
+    if (move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/uploads/". basename($_FILES['image']['name']))){
+      echo "file uploded";
+    } else {
+      echo $_FILES['image']['error'];
+    }
+    // header("location: index.php");
+    
   }
+}else {
+  echo "This type of extention not supported. <br> You can use Jpg, Png, Jpeg, Gig formate to test.";
+  
+}

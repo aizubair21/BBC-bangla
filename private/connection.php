@@ -1,5 +1,10 @@
 <?php
 //database connection//
+$host_name = "localhost";
+$user_name = "root";
+$password = "";
+$bd_name = "bbc_bangla";
+$conn = mysqli_connect($host_name,$user_name,$password,$bd_name);
 
 function connecion () {
     $host_name = "localhost";

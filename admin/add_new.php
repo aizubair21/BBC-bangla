@@ -48,7 +48,7 @@ use function PHPSTORM_META\type;
                         Add New Post
                     </div>
                     <div class="card-body">
-                        <form action="#">
+                        <form action="../function/add_post.php" method="POST" enctype="multipart/form-data">
 
                             <div class="section">
                                 <label for="title" class="form-label">Post Title :</label>
@@ -57,16 +57,18 @@ use function PHPSTORM_META\type;
 
                             <div class="section">
                                 <label  class="form-label" for="Category">Category :</label>
-                                <select name="category" id="catefory" class="form-control" required>
+                                <select name="category" id="catefory" class="form-control" required onchange="change(this.value)">
                                     <option value="0" >Select Your Ctegory</option>
                                     <?php
-                                      $row = [];
+                                      $name = [];
+                                      $id = [];
                                       foreach (category() as $key => $value) {
-                                         array_push($row, $value['name']) ;
+                                         array_push($name, $value['name']) ;
+                                         array_push($id, $value['id']);
                                       }
 
-                                      foreach ($row as $key => $value) {
-                                          echo "<option>"; echo $value; echo "</option>";
+                                      foreach ($name as $key => $value) {
+                                          echo "<option value='$id[$key]'>"; echo $value; echo "</option>";
                                       }
                                     ?>
                                 </select>
@@ -100,5 +102,10 @@ use function PHPSTORM_META\type;
             <div class="col-md-3"></div>
         </div>
     </div>
+    <script>
+        function change(value){
+            console.log(value);
+        }
+    </script>
 </body>
 </html>

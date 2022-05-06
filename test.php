@@ -23,7 +23,7 @@
             <div class="col-8">
                 <div class="card">
                     <div class="card-body">
-                        <form action="function/add_post.php" method="post">
+                        <form action="function/add_post.php" method="post" enctype="multipart/form-data">
                             <input type="text" name="name" id="name" value="zubir" class="form-control form-input">
                             <input type="file" name="image" id="image" class="form-control form-input">
                             <input class="btn btn-info pt-10" type="submit" value="Ok">
