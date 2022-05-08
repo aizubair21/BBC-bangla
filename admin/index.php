@@ -1,5 +1,6 @@
 <?php  
-    require('../share/navigation.php');
+session_start();
+require('../share/navigation.php');
     require('../private/connection.php');
 ?>
 
@@ -20,7 +21,15 @@
 </head>
 <body>
     <div class="container" style="margin-top:20px">
+    <div>
+    <?php 
+        if (isset($_SESSION['status'])) {
+                echo $_SESSION['status'];
+            }
+            ?>
+    </div>
         <div class="row justify-content-between align-items-baseline">
+           
             <div class="col-md-8">
                 <div class="alert alert-info">this is admin panel</div>
 
@@ -31,5 +40,8 @@
             </div>
         </div>
     </div>
+    <?php
+         session_unset();
+    ?>
 </body>
 </html>

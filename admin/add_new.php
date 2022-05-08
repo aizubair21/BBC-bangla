@@ -2,6 +2,7 @@
 
 use function PHPSTORM_META\type;
 
+session_start();
     require('../private/connection.php');
     require('../share/navigation.php');
     
@@ -27,7 +28,7 @@ use function PHPSTORM_META\type;
         }
         .container {
             background-color: rgba(0,0,0, .1);
-            height: 100vh;
+            
         }
         label {
             font-weight: 800;
@@ -40,6 +41,13 @@ use function PHPSTORM_META\type;
         }
     </style>
     <div class="container" style="padding:10px">
+        <div class="w-100 p-5">
+            <?php
+                if (isset($_SESSION['status'])) {
+                    echo $_SESSION['status'];
+                }
+            ?>
+        </div>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -57,7 +65,7 @@ use function PHPSTORM_META\type;
 
                             <div class="section">
                                 <label  class="form-label" for="Category">Category :</label>
-                                <select name="category" id="catefory" class="form-control" required onchange="change(this.value)">
+                                <select name="category" id="catefory" class="form-control" required multiple>
                                     <option value="0" >Select Your Ctegory</option>
                                     <?php
                                       $name = [];
@@ -107,5 +115,8 @@ use function PHPSTORM_META\type;
             console.log(value);
         }
     </script>
+    <?php
+         session_unset();
+    ?>
 </body>
 </html>
