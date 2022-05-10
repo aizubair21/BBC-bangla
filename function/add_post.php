@@ -8,6 +8,7 @@
 <!-- <img src="../upload/uploads/<?php echo($_FILES['image']['name'])?> " alt="image not found"> -->
 <?php
 
+session_unset();
 session_start();
 $title = $_POST['title'];
 $description = $_POST['description'];
@@ -28,7 +29,7 @@ if (mysqli_query($conn, $data)) {
   //echo "<br>";
 };
 
-
+//image save to server//
 if (($_FILES["image"]["type"] == "image/gif") || ($_FILES["image"]["type"] == "image/jpeg") || ($_FILES["image"]["type"] == "image/png") || ($_FILES["image"]["type"] == "image/pjpeg")) {
   if ($_FILES["image"]["error"] > 0) {
     echo "Return code: " . $_FILES["image"]["error"];
@@ -50,5 +51,3 @@ if (($_FILES["image"]["type"] == "image/gif") || ($_FILES["image"]["type"] == "i
   
 }
 
-
-session_unset();

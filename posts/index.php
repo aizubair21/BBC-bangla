@@ -14,7 +14,7 @@
     <title>Post</title>
 </head>
 <body>
-    <?php 
+    <?php
         require_once('../private/connection.php');
         require_once('../share/navigation.php'); 
     ?>
@@ -25,8 +25,24 @@
         foreach ($row as $key => $value) {
            echo $value["user_name"]." ";
         }
+
     ?>
 
 </pre>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <?php 
+                $post = post();
+                foreach ($post as $key => $post) {?>
+                    <img src="../upload/uploads/<?php echo $post['image']?>" alt="<?php $post['image']?>"><br>
+            <?php }?>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
 </body>
 </html>

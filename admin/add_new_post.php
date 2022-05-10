@@ -97,6 +97,11 @@ session_start();
                                     <label class="form-label" for="image_caption">Imapge Caption :</label>
                                     <input type="text" name="caption" id="image_caption" class="form-control form-input" placeholder="This is lorem image">
                                 </div>
+
+                                <div>
+                                    <label for="video" class="form-label"> Post Video :</label>
+                                    <input type="file" name="video" id="video" class="form-control form-input" placeholder="Video Related Post...">
+                                </div>
                             </div>
 
                             <div class="d-flex justify-content-between aign-items-baseline pt-10">

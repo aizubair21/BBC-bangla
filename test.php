@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <?php include('share/navigation.php')?>
+    <?php //include('share/navigation.php')?>
 
     <div class="container">
         <div class="row">
@@ -23,8 +23,8 @@
             <div class="col-8">
                 <div class="card">
                     <div class="card-body">
-                        <form action="function/add_post.php" method="post" enctype="multipart/form-data">
-                            <input type="text" name="name" id="name" value="zubir" class="form-control form-input">
+                        <form action="test.php" method="post" enctype="multipart/form-data">
+                            <input type="text" name="name" id="name" value="zubair" class="form-control form-input">
                             <input type="file" name="image" id="image" class="form-control form-input">
                             <input class="btn btn-info pt-10" type="submit" value="Ok">
                         </form>
@@ -36,3 +36,9 @@
     </div>
 </body>
 </html>
+
+<?php 
+
+    print_r($_FILES);
+
+?>
