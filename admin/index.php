@@ -36,7 +36,7 @@ require('../share/navigation.php');
             </div>
 
             <div class="col-md-4">
-                <a class="btn btn-primary" href="add_new.php">New Post</a>
+                <a class="btn btn-primary" href="add_new_post.php">New Post</a>
             </div>
         </div>
     </div>

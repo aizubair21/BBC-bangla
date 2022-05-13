@@ -15,7 +15,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Posts</title>
     <link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/bootstrap.min.css">
-    <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+   
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -41,22 +41,34 @@ session_start();
         }
     </style>
     <div class="container" style="padding:10px">
-        <div class="w-100 p-5">
-            <?php
+        <div class="alert alert-info alert-dismissible fade show w-100 p-3" role="alert">
+            <strong><?php 
                 if (isset($_SESSION['status'])) {
                     echo $_SESSION['status'];
                 }
-            ?>
+            ?></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+
+        <div class="alert alert-danger alert-dismissible fade show w-100 p-3" role="alert">
+            <strong><?php 
+                if (isset($_SESSION['alert'])) {
+                    echo $_SESSION['alert'];
+                }
+            ?></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="bg-primary text-white p-5" style="font-size: 25px; font-weight:800; text-align:center">
+                <div class="w-100 bg-primary text-white p-5" style="font-size: 25px; font-weight:800; text-align:center">
                         Add New Post
                     </div>
+                <div class="card">
+                   
                     <div class="card-body">
-                        <form action="../function/add_post.php" method="POST" enctype="multipart/form-data">
+                        <form action="../function/add.php" method="POST" enctype="multipart/form-data">
 
                             <div class="section">
                                 <label for="title" class="form-label">Post Title :</label>
@@ -91,7 +103,7 @@ session_start();
                             <div class="input-group ">
                                 <div class="section">
                                     <label class="form-label" for="post_image">Post Image :</label>
-                                    <input type="file" name="image" id="post_image" class="form-input form-control" required>
+                                    <input type="file" name="image" id="post_image" class="form-input form-control">
                                 </div>
                                 <div class="section" >
                                     <label class="form-label" for="image_caption">Imapge Caption :</label>
@@ -121,7 +133,8 @@ session_start();
         }
     </script>
     <?php
-         session_unset();
+        session_unset();
     ?>
 </body>
+<script src="../bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
 </html>

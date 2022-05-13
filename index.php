@@ -26,6 +26,8 @@
     <?php
         require_once('private/connection.php');
         require('share/navigation.php');
+        $post = post();
+        
     ?>
     <section id="top-news">
         <div class="container">

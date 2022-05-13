@@ -15,7 +15,9 @@
 
 </head>
 <body>
-    <?php //include('share/navigation.php')?>
+    <?php //include('share/navigation.php')
+            include('private/connection.php');
+    ?>
 
     <div class="container">
         <div class="row">
@@ -37,8 +39,6 @@
 </body>
 </html>
 
-<?php 
-
-    print_r($_FILES);
-
+<?php
+    
 ?>

@@ -24,7 +24,7 @@ if (mysqli_query($conn, $data)) {
   //echo 'post added !';
   //echo "<br>";
 } else {
-  $_SESSION["status"] = mysqli_errno($conn);
+  $_SESSION["alert"] = mysqli_errno($conn);
   //echo mysqli_error($conn);
   //echo "<br>";
 };
@@ -32,7 +32,8 @@ if (mysqli_query($conn, $data)) {
 //image save to server//
 if (($_FILES["image"]["type"] == "image/gif") || ($_FILES["image"]["type"] == "image/jpeg") || ($_FILES["image"]["type"] == "image/png") || ($_FILES["image"]["type"] == "image/pjpeg")) {
   if ($_FILES["image"]["error"] > 0) {
-    echo "Return code: " . $_FILES["image"]["error"];
+    $_SESSION['alert'] = $_FILES['image']['error'];
+    //echo "Return code: " . $_FILES["image"]["error"];
   }else {
      //echo $_FILES["image"]["name"] ."<br>";
     // echo $_FILES["image"]["size"] ."<br>";
@@ -41,9 +42,10 @@ if (($_FILES["image"]["type"] == "image/gif") || ($_FILES["image"]["type"] == "i
     if (move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/uploads/". basename($_FILES['image']['name']))){
       //echo "file uploded";
     } else {
-      echo $_FILES['image']['error'];
+      $_SESSION['alert'] = $_SESSION['image']['error'];
+      //echo $_FILES['image']['error'];
     }
-    header("location: ../admin/add_new.php");
+    header("location: ../admin/add_new_post.php");
     
   }
 }else {

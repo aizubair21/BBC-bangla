@@ -24,7 +24,7 @@ function category () {
 }
 
 //get posts
-function post () {
+function post() {
 
     $table_querry = 'SELECT * FROM posts';
     $row = row(connecion(),$table_querry);
